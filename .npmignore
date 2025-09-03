@@ -1,0 +1,55 @@
+# Source files
+src/
+tests/
+*.test.ts
+*.spec.ts
+
+# Configuration files
+tsconfig.json
+eslint.config.js
+.eslintrc.*
+
+# Development files
+.vscode/
+.idea/
+
+# Git files
+.git/
+.gitignore
+
+# CI/CD
+.github/
+.travis.yml
+.circleci/
+
+# Documentation (optional - you might want to include some)
+docs/
+examples/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Cache
+.cache/
+*.tsbuildinfo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment files
+.env*
+
+# Lock files (optional - some prefer to exclude)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml

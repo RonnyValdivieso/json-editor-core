@@ -8,9 +8,9 @@
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "require": "./dist/index.cjs",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.cjs"
     }
   },
   "files": [
@@ -19,7 +19,12 @@
   "scripts": {
     "build": "tsup src/index.ts --dts --format esm,cjs",
     "test": "vitest",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "prepublishOnly": "npm run lint && npm run test && npm run build",
+    "prepack": "npm run build",
+    "postpublish": "echo 'Package published successfully! 🎉'",
+    "version": "npm run build && git add -A",
+    "check-package": "npm pack --dry-run"
   },
   "keywords": [
     "json",
