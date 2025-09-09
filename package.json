@@ -38,6 +38,10 @@
   ],
   "author": "Ronny Valdivieso",
   "license": "MIT",
+	"funding": {
+    "type": "buymeacoffee",
+    "url": "https://www.buymeacoffee.com/ronnjs"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/RonnyValdivieso/json-editor-core.git"
